@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kesan4</title>
+</head>
+<body>
+    <video autoplay playsinline muted loop preload>
+        <source src="images/rain.mp4" type="video/mp4">
+    </video>
+
+    <svg height="100%" width="100%">
+        <defs>
+            <mask id="mask" x="0" y="0" height="100%" width="100%">
+                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                <text x="50%" y="50%" fill="red" text-anchor="middle">MEEDY AUDIA</text>
+            </mask>
+        </defs>
+    
+        <rect x="0" y="0" width="100%" height="100%" fill="white" mask="url(#mask)" />
+    </svg>
+    <script>
+        
+        let type = document.querySelector('text');
+
+        setTimeout(() => {
+            type.innerHTML = "hujan";
+        }, 2000)
+    </script>
+    
+
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+        }
+
+        svg {
+            font-family:'Cute Font', sans-serif;
+            font-size: 4em;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 1s;
+            
+            position: absolute;
+            top:  0;
+            left: 0;
+            height: 100%;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+
+        svg rect {
+            fill: white;
+            mask: url(#mask);
+        }
+
+        @media screen and (max-width: 1200px){
+            svg {
+                font-size: 4em;
+            }
+        }
+    </style>
+</body>
+</html>

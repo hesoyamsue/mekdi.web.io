@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Body Page</title>
+</head>
+<body>
+    <!-- Video Kedua -->
+    <div class="container">
+        <video autoplay muted loop playsinline class="background-clip" id="background-video-2">
+            <source src="images/csgo clip.mp4" type="video/mp4">
+        </video>
+        
+
+    <script>
+        const backgroundVideo2 = document.getElementById('background-video-2');
+
+        // Memulai pemutaran video kedua
+        setTimeout(function() {
+            backgroundVideo2.play();
+        }, 200000)
+       
+    </script>
+</body>
+</html>
